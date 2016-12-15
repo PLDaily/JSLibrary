@@ -6,8 +6,15 @@
 	<script type="text/javascript" src="JSLibrary.js"></script>
 </head>
 <body>
+	<div id="div1" style="height: 1500px; width: 100px;">
+		
+	</div>
 	<script type="text/javascript">
-	console.log($$.id());
+	console.log($$.id("div1"));
+
+	window.onscroll = function() {
+		console.log($$.offsetWidth($$.id('div1')));
+	}
 	</script>
 </body>
 </html>
